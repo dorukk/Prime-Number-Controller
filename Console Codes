@@ -1,0 +1,25 @@
+bool primenu = true;
+
+            Console.WriteLine("Enter a number!");
+
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 2; i < number / 2; i++)
+            {
+                if (number % i == 0)
+                {
+                    primenu = false;
+                    break;
+                }
+            }
+            if (primenu == true)
+            {
+                Console.WriteLine("Prime Number!");
+            }
+            else
+            {
+                Console.WriteLine("Its not Prime Number !");
+            }
+
+
+                Console.ReadKey();           
